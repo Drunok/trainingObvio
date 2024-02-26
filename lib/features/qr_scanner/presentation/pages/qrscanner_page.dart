@@ -18,8 +18,8 @@ class QrScannerPage extends StatelessWidget {
         )
       ),
       body: const Center(
-        // child: QrScanner(),
-        child: Placeholder(),
+        child: QrScanner(),
+        // child: Placeholder(),
       ),
       
     );
