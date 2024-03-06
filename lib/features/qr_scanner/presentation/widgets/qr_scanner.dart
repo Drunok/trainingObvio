@@ -7,19 +7,22 @@ class QrScanner extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MobileScanner(
-      controller: MobileScannerController(
-          detectionSpeed: DetectionSpeed.noDuplicates,
-          // facing: CameraFacing.front,
-        ),
-
-      onDetect: (capture) {
-        final List<Barcode> barcodes = capture.barcodes;
-        // final Uint8List? image  = capture.image;
-         for (final barcode in barcodes) {
-            // print('Barcode found! ${barcode.rawValue}');
-          }
-      }, 
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 100, vertical: 300),
+      child: MobileScanner(
+        controller: MobileScannerController(
+            detectionSpeed: DetectionSpeed.noDuplicates,
+            // facing: CameraFacing.front,
+          ),
+      
+        onDetect: (capture) {
+          final List<Barcode> barcodes = capture.barcodes;
+          // final Uint8List? image  = capture.image;
+           for (final barcode in barcodes) {
+              print('Barcode found! ${barcode.rawValue}');
+            }
+        }, 
+      ),
     );
   }
 }
