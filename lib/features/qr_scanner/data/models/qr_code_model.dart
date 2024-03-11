@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:qr_training_obvio/features/qr_scanner/domain/entities/qr_code.dart';
 
 
@@ -22,5 +24,8 @@ class QrCodeModel extends QrCode {
       "rawValue": rawValue
     };
   }
+}
 
+List<QrCodeModel> qrCodeModelListFromJson(String str) {
+  return List<QrCodeModel>.from(json.decode(str).map((x) => QrCodeModel.fromJson(x)));
 }
