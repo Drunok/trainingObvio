@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
 import 'package:qr_training_obvio/features/qr_scanner/presentation/pages/home_page.dart';
+import 'package:qr_training_obvio/injection_container.dart' as di;
 
-void main() {
+void main() async {
+  await di.init();
   runApp(const MyApp());
 }
 
