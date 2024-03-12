@@ -2,7 +2,7 @@ import 'package:dartz/dartz.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:qr_training_obvio/core/error/failures.dart';
-import 'package:qr_training_obvio/features/qr_scanner/domain/entities/qr_code.dart';
+// import 'package:qr_training_obvio/features/qr_scanner/domain/entities/qr_code.dart';
 import 'package:qr_training_obvio/features/qr_scanner/domain/usecases/validate_qr_code.dart';
 import 'package:qr_training_obvio/features/qr_scanner/presentation/bloc/qr_scanner_bloc.dart';
 

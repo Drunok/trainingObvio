@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-import 'package:qr_training_obvio/core/error/failures.dart';
+// import 'package:qr_training_obvio/core/error/failures.dart';
 
 import '../../domain/usecases/validate_qr_code.dart';
 
