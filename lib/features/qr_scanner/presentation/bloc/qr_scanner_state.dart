@@ -13,8 +13,9 @@ final class QrScannerLoading extends QrScannerState {}
 
 final class QrScannerCorrect extends QrScannerState {
   final String messageCorrect;
+  final bool isCorrect;
 
-  const QrScannerCorrect({required this.messageCorrect});
+  const QrScannerCorrect({required this.isCorrect, required this.messageCorrect});
 
   @override
   List<Object> get props => [messageCorrect];

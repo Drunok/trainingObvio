@@ -4,6 +4,7 @@ import 'package:qr_training_obvio/features/qr_scanner/presentation/pages/home_pa
 import 'package:qr_training_obvio/injection_container.dart' as di;
 
 void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   await di.init();
   runApp(const MyApp());
 }

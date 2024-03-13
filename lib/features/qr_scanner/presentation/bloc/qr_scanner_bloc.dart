@@ -16,7 +16,7 @@ class QrScannerBloc extends Bloc<QrScannerEvent, QrScannerState> {
       validateQrCode(Params(qrCode: event.qrScannedData)).then((result) {
         result.fold(
           (failure) => emit(QrScannerError()),
-          (success) => emit(const QrScannerCorrect(messageCorrect: 'Correct')),
+          (success) => emit(QrScannerCorrect(messageCorrect: 'Correct', isCorrect: success)),
         );
       });
     });

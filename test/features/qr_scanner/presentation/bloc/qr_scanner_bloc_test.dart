@@ -54,7 +54,7 @@ void main() {
           // assert later
           final expected = [
             QrScannerLoading(),
-            const QrScannerCorrect(messageCorrect: 'Correct')
+            const QrScannerCorrect(messageCorrect: 'Correct',isCorrect: tBool)
           ];
           expectLater(bloc.stream, emitsInOrder(expected));
           // act
